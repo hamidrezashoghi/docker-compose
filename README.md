@@ -3,8 +3,8 @@ If you install docker service with https://get.docker.com script, when you want 
 with below command, you get python library error.
 ``` # dnf --enablerepo=docker-ce-stable install docker-compose ```
 
-also if you want install docker-compose with this command # pip3 install --upgrade docker-compose
-you get below error.
+also if you want install docker-compose with this command 
+``` # pip3 install --upgrade docker-compose ``` you get below error.
 ```
 # docker-compose
 Traceback (most recent call last):
@@ -18,6 +18,7 @@ ImportError: cannot import name 'ImageNotFound' from 'docker.errors' (/root/.loc
 ```
 
 > Solution
+
 ```
 Install with below command
 # pip3 install docker-compose --force-reinstall --user
