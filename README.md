@@ -1,12 +1,12 @@
 # How to install docker-compose on fedora 31
 If you install docker service with https://get.docker.com script, when you want install docker-compose
 with below command, you get python library error.
-``` \# dnf --enablerepo=docker-ce-stable install docker-compose ```
+``` # dnf --enablerepo=docker-ce-stable install docker-compose ```
 
-also if you want install docker-compose with this command #pip3 install --upgrade docker-compose
+also if you want install docker-compose with this command # pip3 install --upgrade docker-compose
 you get below error.
 ```
-\# docker-compose
+# docker-compose
 Traceback (most recent call last):
   File "/usr/local/bin/docker-compose", line 5, in <module>
     from compose.cli.main import main
@@ -20,5 +20,5 @@ ImportError: cannot import name 'ImageNotFound' from 'docker.errors' (/root/.loc
 > Solution
 ```
 Install with below command
-\# pip3 install docker-compose --force-reinstall --user
+# pip3 install docker-compose --force-reinstall --user
 ```
